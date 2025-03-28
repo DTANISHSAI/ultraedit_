@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 7</title>
+    <style>
+        .logo img {
+            width: 164px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .c1 {
+            padding-top: 50px;
+            justify-content: center;
+            display: flex;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 49px;
+        }
+        .c1_ {
+            display: inline-block;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: 900;
+        }
+        .c3 {
+            display: flex;
+            justify-content: center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 21px;
+            font-weight: 300;
+            opacity: 0.7;
+            padding-top: 30px;
+        }
+        .c4 {
+            display: flex;
+            justify-content: center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 21px;
+            font-weight: 300;
+            opacity: 0.7;
+            padding-top: 10px;
+        }
+        .b {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            background-color: #009bd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .c5 {
+            display: flex;
+            justify-content: center;
+            padding-top: 25px;
+        }
+        /* .c6 {
+            padding-left: 320px;
+            display: inline-flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 25px;
+        } */
+        .c6 {
+            padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap when needed */
+    align-items: center;
+    justify-content: flex-start; /* Ensures content aligns from the left */
+    padding-left: 320px; /* Keeps the starting position fixed */
+    gap: 10px; /* Adds spacing between elements */
+    min-width: fit-content; /* Ensures it only expands as needed */
+    max-width: calc(100% - 320px); /* Prevents overflow but allows expansion */
+}
+
+
+
+        .c6 img {
+            width: 45px;
+        }
+        .c7 {
+            display: inline-block;
+            align-items: center;
+            padding-left: 15px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 21px;
+            font-weight: 300;
+            opacity: 0.7;
+        }
+        .c8 {
+            /* display: inline-block; */
+            /* align-items: center; */
+            padding-left: 12px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            opacity: 0.5;
+        }
+        /* .c9, .c10 {
+            padding-left: 320px;
+            display: inline-flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 25px;
+        } */
+        .c9, .c10 {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+            justify-content: center; /* Centers content */
+            padding-top: 25px; /* Adds spacing between items */
+            padding-left: 0; /* Removes the fixed padding */
+        }
+
+        .d1, .d2, .d3, .d4, .d5, .d6 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 520;
+            background-color: #f6f8f8;
+            color: rgb(9, 8, 8);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 125px;
+            width: 250px;
+            border: none;
+            margin-right: 10px;
+        }
+        .b1 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            background-color: #009bd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 40px;
+            width: 110px;
+        }
+        .b2 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            background-color: #2ca550;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 40px;
+            width: 110px;
+        }
+        .s1 {
+            font-size: 10px;
+            font-weight: 300;
+            opacity: 0.7;
+            padding-bottom:20px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="UE-Logo-1.webp" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li><span>Pricing </span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li><span>Resource</span>s <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li><span>About Us</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li><img src="Lang.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="c1">Download <span class="c1_"> UltraEdit </span> for Windows</div>
+    <div class="c3">Dowload and try UltraEdit before you but it! This download includes the full Windows</div>
+    <div class="c4">version of the text editor</div>
+    <div class="c5"><button class="b">DOWNLOAD MAC OR LINUX VERSION</button></div>
+    <div class="c6"><img src="2_1683819566.webp" alt="logo"><span class="c7"> Dowload UltraEdit </span><span class="c8"> v2023.1(released 08/07/15) | Hotflix</span></div>
+    <div class="c9">
+        <div class="d1">
+            <span>English
+                <br><br><br>
+                <button class="b1">Download 32 bit</button>
+                <button class="b2">Download 64 bit</button>
+            </span>
+            
+        </div>
+        <div class="d2">
+            <span>Duetsch
+                <br>
+                <span class="s1">German</span>
+                <br>
+                <br>
+                <button class="b1">Download 32 bit</button>
+                <button class="b2">Download 64 bit</button>
+            </span>
+        </div>
+        <div class="d3">
+            <span>Italiano
+                <br>
+                <span class="s1">Italian</span>
+                <br>
+                <br>
+                <button class="b1">Download 32 bit</button>
+                <button class="b2">Download 64 bit</button>
+            </span>
+        </div>
+    </div>
+    <div class="c10">
+        <div class="d4">
+            <span>Españoel
+                <br>
+                <span class="s1">Spanish</span>
+                <br>
+                <br>
+                <button class="b1">Download 32 bit</button>
+                <button class="b2">Download 64 bit</button>
+            </span>
+        </div>
+        <div class="d5">
+            <span>Françias
+                <br>
+                <span class="s1">french</span>
+                <br>
+                <br>
+                <button class="b1">Download 32 bit</button>
+                <button class="b2">Download 64 bit</button>
+            </span>
+        </div>
+        <div class="d6">
+            <span>Português braseliero
+                <br>
+                <span class="s1">Brazilian Portugeuse</span>
+                <br>
+                <br>
+                <button class="b1">Download 32 bit</button>
+                <button class="b2">Download 64 bit</button>
+            </span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
